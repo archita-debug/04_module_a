@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A3:Sunrise and sunset</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        div{
+            background-image: url(1.png);
+            width: 1900px;
+            height: 1000px;
+        }
+        img{
+            width: 100%;
+            max-height: 80%;
+        }
+        #moon{
+            width: fit-content;
+            align-self: center;
+        }
+        #cloud{
+            width: fit-content;
+            align-self: right;
+        }
+        .day{
+            padding: 20px;
+            border-radius: 5%;
+            background-color: yellow;
+             font-weight: bold;
+            font-size: large;
+        }
+        .night{
+            padding: 20px;
+            border-radius: 5%;
+            align-items: left;
+            background-color: gray;
+            color: white;
+            font-weight: bold;
+            font-size: large;
+        }
+        :hover .day .night{
+            padding: 30px;
+            font-size: larger;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+    <img id="moon" src="3.png"  >
+    <img id="cloud" src="4.png"  >
+    </div>
+    <button  class="day" onclick="day()">Day</button>
+    <button  class="night" onclick="night()">Night</button>
+
+    <script>
+        Day=document.getElementsByClassName(day).value;
+        Night=document.getElementsByClassName(night).value;
+        function day(Day){
+                document.getElementsBy(body).style.background-color(white);
+            night(true);
+        }
+        function night(Night){
+                document.getElementsBy(body).style.background-color(black);
+            day(true);
+        }
+    </script>
+</body>
+</html>

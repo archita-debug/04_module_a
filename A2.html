@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A2:Stars Rating Animation</title>
+    <style>
+        body{
+            background-color: white;
+        }
+        img{
+            width: auto;
+            height: fit-content;
+            align-content:center;
+        }
+        :hover img{
+            animation: rate 0.1ms forwards;
+        }
+        @keyframes rate {
+            0%{
+                animation-fill-mode: initial;
+            }
+            100%{
+                background:yellow;
+                animation-fill-mode: var(100%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="Stars">
+        <img src="stars.png" >
+    </div>
+</body>
+</html>
